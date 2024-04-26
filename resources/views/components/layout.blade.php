@@ -48,7 +48,8 @@
 
 </head>
 <body>
-<main class="container">
+<main class="container mx-auto px-4">
+
 
 <x-ui.headline
     headline="Storyblok and Livewire"
