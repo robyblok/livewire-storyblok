@@ -1,8 +1,6 @@
 <html>
 <head>
     <title>{{ $title ?? 'Storyblok Example' }}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-
     @livewireStyles
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -52,7 +50,11 @@
 <body>
 <main class="container">
 
-    <h1>Storyblok and Livewire</h1>
+<x-ui.headline
+    headline="Storyblok and Livewire"
+    subheadline="PoC for Visual Editor and Laravel/PHP"
+    />
+
     <hr />
     {{ $slot }}
 </main>
